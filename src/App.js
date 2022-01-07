@@ -1,736 +1,206 @@
-import './App.css';
-import React from 'react';
+import "./App.css";
+import React from "react";
 import ReactDom from "react-dom";
-import Ticker from 'react-ticker'
-import axios from "axios"
+import Ticker from "react-ticker";
+import axios from "axios";
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
-import PlantList from './components.js/PlantList';
+
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import CardActions from "@material-ui/core/CardActions";
-import Slide from 'react-reveal/Slide';
-
-
-
-
-
+import Slide from "react-reveal/Slide";
 
 import pic from "./bitcoin.jpg";
-//<img src={pic} />  
+//<img src={pic} />
 const myComponent = {
-  width: '850px',
-  height: '550px',
+  width: "850px",
+  height: "550px",
   overflow: "scroll",
-
-
-
 };
-
-
-
-
-
 
 function App() {
   return (
-    <div className="App">
-
-
-
-      <div className="App-header">
-        <div className="leftbox">
-          Hello
-
-
-
-
-
-        </div>-
-
-
-        <div>
-          <div className="title-Name"> The New York Times </div>
-        </div>
-
-
-
-
-        <div className="rightbox">
-          Hello
-        </div>
-
-
-
-      </div>
-
-
-
-      <div>
-        <Ticker speed={10} height={55} >
-          {({ }) => (
-            <>
-              <h2 className='ticker' >
-                This is the Headline of element.
-              </h2>
-            </>
-          )}
-        </Ticker>
-      </div>
-
-
-
-      <div className="right" >
-        <div>
-
-          <h1>Hellowwww </h1>
-
-
-
-        </div>
-
-
-
-
-
-
-        <body className='body-page' >
-          <div className="line-page" >
-
-
-            <div style={{ height: '300px', width: "300px" }}>
-
-
-
-              <div className='Scroll' style={myComponent}>
-                <ul className="left-article"   >
-                  <div className="self-Title">Self</div>
-                  <div style={{ width: "260px", borderTop: "1px solid black ", marginLeft: 20, marginRight: 60 }}></div>
-
-
-                </ul>
-
-
-
-              </div>
+    <div>
+      <body>
+        <header>
+          <nav className="links">
+            <div className="leftbox">
+              "Neque porro quisquam est qui dolorem ipsum quia dolor " "
             </div>
+            <div className="title-Name"> The New York Times </div>
+            <div className="rightbox">
+              "Neque porro quisquam est qui dolorem ipsum quia dolor , .
+            </div>
+          </nav>
+          <div>
+            <Ticker speed={10} height={55}>
+              {({}) => (
+                <>
+                  <h2 className="ticker">This is the Headline of element.</h2>
+                </>
+              )}
+            </Ticker>
+
+            <div className="bottom-border-right"> </div>
           </div>
+        </header>
 
+        <section>
+          <div class="wrapper">
+            <div>
+              <div className="left-side-border"></div>
 
-          <div style={{ height: '300px', width: "300px" }}>
-
-            <div class="seperator">
+              <div className="bottom-border-right"> </div>
             </div>
 
-            <div className='Scroll' style={myComponent}>
-              <ul className="article"   >
-                <div className="title">
-
-
-                  <div className="love-Title"> Love        </div>
-                  <h4> 12.06.2021  </h4>
-                </div>
-
-
-                <div style={{ borderBottom: " 1px solid black ", width: 650, marginRight: 20 }}></div>
-
-                <div style={{}}>
-
-
-
-
-                  <Card className="cards"
-                    style={{
-                      width: 650,
-                      height: 570,
-                      backgroundColor: "white",
-                      marginTop: 40
-                    }}
-                  >
-                    <CardContent className="center-cards"  >
-                      <Typography
-                        style={{ fontSize: 14 }}
-                        color="textSecondary"
-                        gutterBottom
-                      >
-                        <Slide right>
-                          <img className="image-page" src={pic} />
-                        </Slide>
-                      </Typography>
-                      <Typography variant="h5" component="h2" className="typo-width"   >
-
-                        <Slide right>
-                          Sharing The Widespread Acclaim About Motivation
-                        </Slide>
-                      </Typography>
-                      <Typography className=" typo-width  "
-                        style={{
-                          marginBottom: 12,
-                          fontSize: 14,
-                          width: 150
-
-                        }}
-                        color="textSecondary"
-                      >
-
-                        <Slide right>
-                          By Richard Carnation
-
-                        </Slide>
-                      </Typography>
-
-
-                      <Typography style={{ width: 500 }} variant="body2" component="p">
-                        <Slide right>
-                          Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's unconventional
-
-                        </Slide>
-                      </Typography>
-                    </CardContent>
-
-                    <Slide right>
-                      <CardActions>
-                        <Button size="small">Stay Safe.....</Button>
-                      </CardActions>
-                    </Slide>
-
-
-
-                  </Card>
-
-                  <div className="title">
-
-
-                    <div className="love-Title"> Love        </div>
-                    <h4> 12.06.2021  </h4>
-                  </div>
-
-
-                  <div style={{ borderBottom: " 1px solid black ", width: 650, marginRight: 20 }}></div>
-
-
-                  <Card className="cards"
-                    style={{
-                      width: 650,
-                      height: 570,
-                      backgroundColor: "white",
-                      marginTop: 40
-                    }}
-                  >
-                    <CardContent className="center-cards"  >
-                      <Typography
-                        style={{ fontSize: 14 }}
-                        color="textSecondary"
-                        gutterBottom
-                      >
-                        <Slide right>
-                          <img className="image-page" src={pic} />
-                        </Slide>
-                      </Typography>
-                      <Typography variant="h5" component="h2" className="typo-width"   >
-
-                        <Slide right>
-                          Sharing The Widespread Acclaim About Motivation
-                        </Slide>
-                      </Typography>
-                      <Typography className=" typo-width  "
-                        style={{
-                          marginBottom: 12,
-                          fontSize: 14,
-                          width: 150
-
-                        }}
-                        color="textSecondary"
-                      >
-
-                        <Slide right>
-                          By Richard Carnation
-
-                        </Slide>
-                      </Typography>
-
-
-                      <Typography style={{ width: 500 }} variant="body2" component="p">
-                        <Slide right>
-                          Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's unconventional
-
-                        </Slide>
-                      </Typography>
-                    </CardContent>
-
-                    <Slide right>
-                      <CardActions>
-                        <Button size="small">Stay Safe.....</Button>
-                      </CardActions>
-                    </Slide>
-
-
-
-                  </Card>
-
-
-
-                  <div className="title">
-
-
-                    <div className="love-Title"> Love        </div>
-                    <h4> 12.06.2021  </h4>
-                  </div>
-
-
-                  <div style={{ borderBottom: " 1px solid black ", width: 650, marginRight: 20 }}></div>
-
-
-                  <Card className="cards"
-                    style={{
-                      width: 650,
-                      height: 570,
-                      backgroundColor: "white",
-                      marginTop: 40
-                    }}
-                  >
-                    <CardContent className="center-cards"  >
-                      <Typography
-                        style={{ fontSize: 14 }}
-                        color="textSecondary"
-                        gutterBottom
-                      >
-                        <Slide right>
-                          <img className="image-page" src={pic} />
-                        </Slide>
-                      </Typography>
-                      <Typography variant="h5" component="h2" className="typo-width"   >
-
-                        <Slide right>
-                          Sharing The Widespread Acclaim About Motivation
-                        </Slide>
-                      </Typography>
-                      <Typography className=" typo-width  "
-                        style={{
-                          marginBottom: 12,
-                          fontSize: 14,
-                          width: 150
-
-                        }}
-                        color="textSecondary"
-                      >
-
-                        <Slide right>
-                          By Richard Carnation
-
-                        </Slide>
-                      </Typography>
-
-
-                      <Typography style={{ width: 500 }} variant="body2" component="p">
-                        <Slide right>
-                          Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's unconventional
-
-                        </Slide>
-                      </Typography>
-                    </CardContent>
-
-                    <Slide right>
-                      <CardActions>
-                        <Button size="small">Stay Safe.....</Button>
-                      </CardActions>
-                    </Slide>
-
-
-
-                  </Card>
-
-
-                  <div className="title">
-
-
-                    <div className="love-Title"> Love        </div>
-                    <h4> 12.06.2021  </h4>
-                  </div>
-
-
-                  <div style={{ borderBottom: " 1px solid black ", width: 650, marginRight: 20 }}></div>
-
-
-                  <Card className="cards"
-                    style={{
-                      width: 650,
-                      height: 570,
-                      backgroundColor: "white",
-                      marginTop: 40
-                    }}
-                  >
-                    <CardContent className="center-cards"  >
-                      <Typography
-                        style={{ fontSize: 14 }}
-                        color="textSecondary"
-                        gutterBottom
-                      >
-                        <Slide right>
-                          <img className="image-page" src={pic} />
-                        </Slide>
-                      </Typography>
-                      <Typography variant="h5" component="h2" className="typo-width"   >
-
-                        <Slide right>
-                          Sharing The Widespread Acclaim About Motivation
-                        </Slide>
-                      </Typography>
-                      <Typography className=" typo-width  "
-                        style={{
-                          marginBottom: 12,
-                          fontSize: 14,
-                          width: 150
-
-                        }}
-                        color="textSecondary"
-                      >
-
-                        <Slide right>
-                          By Richard Carnation
-
-                        </Slide>
-                      </Typography>
-
-
-                      <Typography style={{ width: 500 }} variant="body2" component="p">
-                        <Slide right>
-                          Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's unconventional
-
-                        </Slide>
-                      </Typography>
-                    </CardContent>
-
-                    <Slide right>
-                      <CardActions>
-                        <Button size="small">Stay Safe.....</Button>
-                      </CardActions>
-                    </Slide>
-
-
-
-                  </Card>
-
-
-                </div>
-              </ul>
+            <div>
+              <div className="self-Title">Self</div>
+              <div className="self-border-right"></div>
+              <div className="bottom-self-border-right"> </div>
             </div>
-          </div>
-        </body>
-        <div>
 
-          <div className="left"  >Hellow </div>
-
-          
-          <div className="left-box">
-            Hello again
-
-
-Here is the 2nd scroll
-
-            <div className='Scroll' style={myComponent}>
-              <ul className="article"   >
+            <div className="Scroll" style={myComponent}>
+              <ul className="article">
                 <div className="title">
+                  <div className="secound-Title"> Esteem</div>
 
+                  <div className="borderTitle"> </div>
 
-                  <div className="love-Title"> Love        </div>
-                  <h4> 12.06.2021  </h4>
-                </div>
-
-
-                <div style={{ borderBottom: " 1px solid black ", width: 650, marginRight: 20 }}></div>
-
-                <div style={{}}>
-
-
-
-
-                  <Card className="cards"
-                    style={{
-                      width: 650,
-                      height: 570,
-                      backgroundColor: "white",
-                      marginTop: 40
-                    }}
-                  >
-                    <CardContent className="center-cards"  >
-                      <Typography
-                        style={{ fontSize: 14 }}
-                        color="textSecondary"
-                        gutterBottom
-                      >
-                        <Slide right>
-                      
-                        </Slide>
-                      </Typography>
-                      <Typography variant="h5" component="h2" className="typo-width"   >
-
-                        <Slide right>
-                          Sharing The Widespread Acclaim About Motivation
-                        </Slide>
-                      </Typography>
-                      <Typography className=" typo-width  "
-                        style={{
-                          marginBottom: 12,
-                          fontSize: 14,
-                          width: 150
-
-                        }}
-                        color="textSecondary"
-                      >
-
-                        <Slide right>
-                          By Richard Carnation
-
-                        </Slide>
-                      </Typography>
-
-
-                      <Typography style={{ width: 500 }} variant="body2" component="p">
-                        <Slide right>
-                          Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's unconventional
-
-                        </Slide>
-                      </Typography>
-                    </CardContent>
-
+                  <div className="card">
                     <Slide right>
-                      <CardActions>
-                        <Button size="small">Stay Safe.....</Button>
-                      </CardActions>
+                      <img className="image-page" src={pic} />
                     </Slide>
 
 
-
-                  </Card>
-
-                  <div className="title">
-
-
-                    <div className="love-Title"> Love        </div>
-                    <h4> 12.06.2021  </h4>
-                  </div>
-
-
-                  <div style={{ borderBottom: " 1px solid black ", width: 650, marginRight: 20 }}></div>
-
-
-                  <Card className="cards"
-                    style={{
-                      width: 650,
-                      height: 570,
-                      backgroundColor: "white",
-                      marginTop: 40
-                    }}
-                  >
-                    <CardContent className="center-cards"  >
-                      <Typography
-                        style={{ fontSize: 14 }}
-                        color="textSecondary"
-                        gutterBottom
-                      >
-                        <Slide right>
                     
-                        </Slide>
-                      </Typography>
-                      <Typography variant="h5" component="h2" className="typo-width"   >
-
-                        <Slide right>
-                          Sharing The Widespread Acclaim About Motivation
-                        </Slide>
-                      </Typography>
-                      <Typography className=" typo-width  "
-                        style={{
-                          marginBottom: 12,
-                          fontSize: 14,
-                          width: 150
-
-                        }}
-                        color="textSecondary"
-                      >
-
-                        <Slide right>
-                          By Richard Carnation
-
-                        </Slide>
-                      </Typography>
-
-
-                      <Typography style={{ width: 500 }} variant="body2" component="p">
-                        <Slide right>
-                          Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's unconventional
-
-                        </Slide>
-                      </Typography>
-                    </CardContent>
 
                     <Slide right>
-                      <CardActions>
-                        <Button size="small">Stay Safe.....</Button>
-                      </CardActions>
+                      <p className="card-header">
+                        {" "}
+                        Sharing The Widespread Acclaim About Motivation{" "}
+                      </p>
                     </Slide>
 
+                    <Slide right>
+                      {" "}
+                      <p className="card-author"> By Richard Carnation </p>{" "}
+                    </Slide>
+
+                    <Slide right>
+                  <p className="card-paragraph">  Blonde received widespread acclaim, with critics praising
+                      Ocean's introspective lyrics and the album's
+                      unconventional
+                      </p>  
 
 
-                  </Card>
+                    </Slide>
 
+                    <Slide right>
+                      <Button className="card-button">Stay .....</Button>
+                    </Slide>
 
-
-                  <div className="title">
-
-
-                    <div className="love-Title"> Love        </div>
-                    <h4> 12.06.2021  </h4>
+                 
+                
                   </div>
 
+                  <div className="secound-Title"> Love</div>
 
-                  <div style={{ borderBottom: " 1px solid black ", width: 650, marginRight: 20 }}></div>
+<div className="borderTitle"> </div>
 
-
-                  <Card className="cards"
-                    style={{
-                      width: 650,
-                      height: 570,
-                      backgroundColor: "white",
-                      marginTop: 40
-                    }}
-                  >
-                    <CardContent className="center-cards"  >
-                      <Typography
-                        style={{ fontSize: 14 }}
-                        color="textSecondary"
-                        gutterBottom
-                      >
-                        <Slide right>
-         
-                        </Slide>
-                      </Typography>
-                      <Typography variant="h5" component="h2" className="typo-width"   >
-
-                        <Slide right>
-                          Sharing The Widespread Acclaim About Motivation
-                        </Slide>
-                      </Typography>
-                      <Typography className=" typo-width  "
-                        style={{
-                          marginBottom: 12,
-                          fontSize: 14,
-                          width: 150
-
-                        }}
-                        color="textSecondary"
-                      >
-
-                        <Slide right>
-                          By Richard Carnation
-
-                        </Slide>
-                      </Typography>
+<div className="card">
+  <Slide right>
+    <img className="image-page" src={pic} />
+  </Slide>
 
 
-                      <Typography style={{ width: 500 }} variant="body2" component="p">
-                        <Slide right>
-                          Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's unconventional
+  
 
-                        </Slide>
-                      </Typography>
-                    </CardContent>
+  <Slide right>
+    <p className="card-header">
+      {" "}
+      Sharing The Widespread Acclaim About Motivation{" "}
+    </p>
+  </Slide>
 
-                    <Slide right>
-                      <CardActions>
-                        <Button size="small">Stay Safe.....</Button>
-                      </CardActions>
-                    </Slide>
+  <Slide right>
+    {" "}
+    <p className="card-author"> By Richard Carnation </p>{" "}
+  </Slide>
+
+  <Slide right>
+<p className="card-paragraph">  Blonde received widespread acclaim, with critics praising
+    Ocean's introspective lyrics and the album's
+    unconventional
+    </p>  
+
+
+  </Slide>
+
+  <Slide right>
+    <Button className="card-button">Stay Tune.....</Button>
+  </Slide>
 
 
 
-                  </Card>
+</div>
+
+<div className="secound-Title"> Control</div>
+
+<div className="borderTitle"> </div>
+
+<div className="card">
+  <Slide right>
+    <img className="image-page" src={pic} />
+  </Slide>
 
 
-                  <div className="title">
+  
+
+  <Slide right>
+    <p className="card-header">
+      {" "}
+      Sharing The Widespread Acclaim About Motivation{" "}
+    </p>
+  </Slide>
+
+  <Slide right>
+    {" "}
+    <p className="card-author"> By Richard Carnation </p>{" "}
+  </Slide>
+
+  <Slide right>
+<p className="card-paragraph">  Blonde received widespread acclaim, with critics praising
+    Ocean's introspective lyrics and the album's
+    unconventional
+    </p>  
 
 
-                    <div className="love-Title"> Love        </div>
-                    <h4> 12.06.2021  </h4>
-                  </div>
+  </Slide>
 
-
-                  <div style={{ borderBottom: " 1px solid black ", width: 650, marginRight: 20 }}></div>
-
-
-                  <Card className="cards"
-                    style={{
-                      width: 650,
-                      height: 570,
-                      backgroundColor: "white",
-                      marginTop: 40
-                    }}
-                  >
-                    <CardContent className="center-cards"  >
-                      <Typography
-                        style={{ fontSize: 14 }}
-                        color="textSecondary"
-                        gutterBottom
-                      >
-                        <Slide right>
-                     
-                        </Slide>
-                      </Typography>
-                      <Typography variant="h5" component="h2" className="typo-width"   >
-
-                        <Slide right>
-                          Sharing The Widespread Acclaim About Motivation
-                        </Slide>
-                      </Typography>
-                      <Typography className=" typo-width  "
-                        style={{
-                          marginBottom: 12,
-                          fontSize: 14,
-                          width: 150
-
-                        }}
-                        color="textSecondary"
-                      >
-
-                        <Slide right>
-                          By Richard Carnation
-
-                        </Slide>
-                      </Typography>
-
-
-                      <Typography style={{ width: 500 }} variant="body2" component="p">
-                        <Slide right>
-                          Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's unconventional
-
-                        </Slide>
-                      </Typography>
-                    </CardContent>
-
-                    <Slide right>
-                      <CardActions>
-                        <Button size="small">Stay Safe.....</Button>
-                      </CardActions>
-                    </Slide>
+  <Slide right>
+    <Button className="card-button">Stay .....</Button>
+  </Slide>
 
 
 
-                  </Card>
+</div>
+
 
 
                 </div>
               </ul>
             </div>
 
-            
+            <div>
+              <div className="left-side-border"></div>
 
+              <div className="bottom-self-border-far-right"> </div>
+            </div>
           </div>
-        </div>
-
-
-      </div>
-
+        </section>
+      </body>
     </div>
   );
 }
