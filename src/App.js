@@ -16,7 +16,7 @@ import pic from "./bitcoin.jpg";
 //<img src={pic} />
 const myComponent = {
   width: "850px",
-  height: "700px",
+  height: "590px",
   overflow: "scroll",
 };
 
@@ -42,7 +42,7 @@ function App() {
                 </>
               )}
             </Ticker>
-
+//#1
             <div className="bottom-border-right"></div>
           </div>
         </header>
@@ -54,13 +54,16 @@ function App() {
               <div className="left-side"> NO2 </div>
               <div className="left-side"> NO2 </div>
               <div className="left-side"> NO2 </div>
-              <div className="bottom-border-right"> </div>
+              <div className="no-border-right">
+      
+                 </div>
             </div>
 
             <div>
               <div className="self-Title">Self</div>
 
               <div className="bottom-self-border-right"></div>
+    
             </div>
 
             <div className="Scroll" style={myComponent}>
@@ -124,10 +127,30 @@ function App() {
                   </div>
                 </div>
               </ul>
+
+              
             </div>
 
+         
+
+            <div className="right-box">
+
+
+
+            
+              <div className="inner-box">
+              "Neque porro quisquam est qui dolorem ipsum quia dolor "     #3 "
+            </div>
+            
+            </div>
+        
+      
             <div>
               <div className="left-side-border"></div>
+
+
+         
+
             </div>
           </div>
         </section>
