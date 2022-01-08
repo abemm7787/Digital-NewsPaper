@@ -16,7 +16,7 @@ import pic from "./bitcoin.jpg";
 //<img src={pic} />
 const myComponent = {
   width: "850px",
-  height: "550px",
+  height: "700px",
   overflow: "scroll",
 };
 
@@ -43,7 +43,7 @@ function App() {
               )}
             </Ticker>
 
-            <div className="bottom-border-right"> </div>
+            <div className="bottom-border-right"></div>
           </div>
         </header>
 
@@ -51,14 +51,16 @@ function App() {
           <div class="wrapper">
             <div>
               <div className="left-side-border"></div>
-
+              <div className="left-side"> NO2 </div>
+              <div className="left-side"> NO2 </div>
+              <div className="left-side"> NO2 </div>
               <div className="bottom-border-right"> </div>
             </div>
 
             <div>
               <div className="self-Title">Self</div>
-              <div className="self-border-right"></div>
-              <div className="bottom-self-border-right"> </div>
+
+              <div className="bottom-self-border-right"></div>
             </div>
 
             <div className="Scroll" style={myComponent}>
@@ -68,135 +70,64 @@ function App() {
 
                   <div className="borderTitle"> </div>
 
-                  <div className="card">
+                  <div style={{}}>
                     <Slide right>
                       <img className="image-page" src={pic} />
                     </Slide>
 
-
-                    
-
                     <Slide right>
-                      <p className="card-header">
+                      <div className="card-header">
                         {" "}
                         Sharing The Widespread Acclaim About Motivation{" "}
-                      </p>
+                      </div>
                     </Slide>
 
                     <Slide right>
-                      {" "}
-                      <p className="card-author"> By Richard Carnation </p>{" "}
+                      <div className="card-author"> </div>By Richard Carnation
                     </Slide>
 
                     <Slide right>
-                  <p className="card-paragraph">  Blonde received widespread acclaim, with critics praising
+                      Blonde received widespread acclaim, with critics praising
                       Ocean's introspective lyrics and the album's
                       unconventional
-                      </p>  
-
-
                     </Slide>
 
                     <Slide right>
-                      <Button className="card-button">Stay .....</Button>
+                      <Button size="small">Stay Safe.....</Button>
                     </Slide>
-
-                 
-                
                   </div>
 
-                  <div className="secound-Title"> Love</div>
+                  <div className="secound-Title"> Esteem</div>
 
-<div className="borderTitle"> </div>
+                  <div className="borderTitle"> </div>
 
-<div className="card">
-  <Slide right>
-    <img className="image-page" src={pic} />
-  </Slide>
+                  <div style={{}}>
+                    <Slide right>
+                      <img className="image-page" src={pic} />
+                    </Slide>
 
+                    <Slide right>
+                      <p> Sharing The Widespread Acclaim About Motivation </p>
+                    </Slide>
 
-  
+                    <Slide right>By Richard Carnation</Slide>
 
-  <Slide right>
-    <p className="card-header">
-      {" "}
-      Sharing The Widespread Acclaim About Motivation{" "}
-    </p>
-  </Slide>
+                    <Slide right>
+                      Blonde received widespread acclaim, with critics praising
+                      Ocean's introspective lyrics and the album's
+                      unconventional
+                    </Slide>
 
-  <Slide right>
-    {" "}
-    <p className="card-author"> By Richard Carnation </p>{" "}
-  </Slide>
-
-  <Slide right>
-<p className="card-paragraph">  Blonde received widespread acclaim, with critics praising
-    Ocean's introspective lyrics and the album's
-    unconventional
-    </p>  
-
-
-  </Slide>
-
-  <Slide right>
-    <Button className="card-button">Stay Tune.....</Button>
-  </Slide>
-
-
-
-</div>
-
-<div className="secound-Title"> Control</div>
-
-<div className="borderTitle"> </div>
-
-<div className="card">
-  <Slide right>
-    <img className="image-page" src={pic} />
-  </Slide>
-
-
-  
-
-  <Slide right>
-    <p className="card-header">
-      {" "}
-      Sharing The Widespread Acclaim About Motivation{" "}
-    </p>
-  </Slide>
-
-  <Slide right>
-    {" "}
-    <p className="card-author"> By Richard Carnation </p>{" "}
-  </Slide>
-
-  <Slide right>
-<p className="card-paragraph">  Blonde received widespread acclaim, with critics praising
-    Ocean's introspective lyrics and the album's
-    unconventional
-    </p>  
-
-
-  </Slide>
-
-  <Slide right>
-    <Button className="card-button">Stay .....</Button>
-  </Slide>
-
-
-
-</div>
-
-
-
+                    <Slide right>
+                      <Button size="small">Stay Safe.....</Button>
+                    </Slide>
+                  </div>
                 </div>
               </ul>
             </div>
 
             <div>
               <div className="left-side-border"></div>
-
-              <div className="bottom-self-border-far-right"> </div>
             </div>
           </div>
         </section>
