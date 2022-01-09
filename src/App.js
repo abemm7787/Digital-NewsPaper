@@ -42,7 +42,7 @@ function App() {
                 </>
               )}
             </Ticker>
-//#1
+
             <div className="bottom-border-right"></div>
           </div>
         </header>
@@ -54,23 +54,24 @@ function App() {
               <div className="left-side"> NO2 </div>
               <div className="left-side"> NO2 </div>
               <div className="left-side"> NO2 </div>
-              <div className="no-border-right">
-      
-                 </div>
+              <div className="no-border-right"></div>
             </div>
 
             <div>
-              <div className="self-Title">Self</div>
-
-              <div className="bottom-self-border-right"></div>
-    
+              <div className="self-Title">
+                Self
+                <div className="bottom-self-border-right"></div>{" "}
+                <li className="pinnedone"> Pinned Issue </li>
+              </div>
+              <h1 className="pinned"> </h1>
+              <div className="self-sentence"> NO.O1 </div>
             </div>
 
             <div className="Scroll" style={myComponent}>
               <ul className="article">
                 <div className="title">
                   <div className="secound-Title"> Esteem</div>
-
+                  <div className="date"> 01/08/2022 </div>
                   <div className="borderTitle"> </div>
 
                   <div style={{}}>
@@ -127,30 +128,16 @@ function App() {
                   </div>
                 </div>
               </ul>
-
-              
             </div>
-
-         
 
             <div className="right-box">
-
-
-
-            
               <div className="inner-box">
-              "Neque porro quisquam est qui dolorem ipsum quia dolor "     #3 "
+                "Neque porro quisquam est qui dolorem ipsum quia dolor " #3 "
+              </div>
             </div>
-            
-            </div>
-        
-      
+
             <div>
               <div className="left-side-border"></div>
-
-
-         
-
             </div>
           </div>
         </section>

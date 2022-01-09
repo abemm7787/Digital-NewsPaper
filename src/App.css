@@ -184,10 +184,6 @@ table {
   align-items: flex-start;
   align-items: baseline;
   gap: 0px;
-
-
-
-
 }
 
 .Scroll {
@@ -198,7 +194,6 @@ table {
 
 .article {
   display: flex;
-  
 }
 
 .left-article {
@@ -223,8 +218,6 @@ table {
   width: 230px;
   height: 90px;
   box-shadow: 4px 4px 2px 1px rgba(1, 1, 19, 0.931);
-
-
 }
 
 .links {
@@ -260,7 +253,6 @@ body {
   height: 90px;
   text-align: center;
   box-shadow: 4px 4px 2px 1px rgba(1, 1, 19, 0.931);
-
 }
 
 .line-page {
@@ -294,7 +286,7 @@ body {
   font-size: 120px;
   font-weight: 100;
   margin-right: 50px;
- 
+
   width: 240px;
 }
 
@@ -308,9 +300,7 @@ body {
 }
 
 .self-Title {
-
-  
-  margin-left:90px;
+  margin-left: 90px;
   font-size: 160px;
   font-weight: 100;
   border-bottom: 1px solid black;
@@ -324,8 +314,6 @@ body {
 
   font-size: 120px;
   font-weight: 100;
-
- 
 }
 
 .secound-Title {
@@ -460,9 +448,6 @@ img {
   position: relative;
 }
 
-
-
-
 .bottom-border-right {
   display: flex;
   position: absolute;
@@ -470,13 +455,12 @@ img {
   margin-top: 20px;
   height: 540px;
   margin-left: 205px;
-
 }
 
-.no-border-right{
-
+.no-border-right {
+  font-size: 160px;
+  font-weight: 100;
 }
-
 
 .bottom-self-border-right {
   display: flex;
@@ -484,7 +468,7 @@ img {
   border-right: 1px solid black;
   margin-top: 20px;
   height: 300px;
-  margin-left: 380px;
+  margin-left: 290px;
 }
 
 .bottom-self-border-far-right {
@@ -555,7 +539,7 @@ img {
 
   .secound-Title {
     font-size: 50px;
-margin-bottom:350px ;
+    margin-bottom: 350px;
     font-weight: 100;
     margin-left: 40px;
   }
@@ -602,47 +586,59 @@ margin-bottom:350px ;
   }
 }
 
-
-.right-box{
-
+.right-box {
   border: 1px solid rgb(39, 38, 38);
-  width:500px;
+  width: 500px;
   height: 500px;
-margin-top: 30px;
-margin-right: 75px;
-
-  
-
+  margin-top: 30px;
+  margin-right: 75px;
 }
 
+.self-sentence {
+  margin-left: 100px;
+  font-size: 60px;
+  font-weight: 100;
 
-.inner-box{
+  width: 270px;
+}
+
+.inner-box {
   border: 1px solid rgb(0, 5, 0);
   width: 500px;
   height: 50px;
   background-color: rgb(0, 0, 0);
-
-   
 }
 
-.Pinnedone{
-margin-right: 440px;
-
-
+.pinned {
+  margin-bottom: 240px;
 }
 
-.left-side{
+.left-side {
+  margin-left: 20px;
 
-margin-left:20px;
-
-padding:40px;
+  padding: 40px;
 }
 
-.no{
-
+.no {
+  font-size: 200px;
   margin-right: 440px;
-background-color: salmon;
-
+  background-color: salmon;
 }
 
+.pinnedone {
+ 
+  font-size: 25px;
+  font-weight: 100;
 
+  width: 270px;
+}
+
+.date {
+
+  margin-left:400px;
+  font-size: 25px;
+  font-weight: 100;
+
+
+  width: 270px;
+}
