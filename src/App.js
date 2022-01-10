@@ -4,7 +4,7 @@ import ReactDom from "react-dom";
 import Ticker from "react-ticker";
 import axios from "axios";
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
-
+import { IconName } from "react-icons/ai";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
@@ -20,10 +20,16 @@ const myComponent = {
   overflow: "scroll",
 };
 
+const mysecoundComponent = {
+  width: "450px",
+  height: "290px",
+  overflow: "scroll",
+};
+
 function App() {
   return (
-    <div>
-      <body>
+    <div className="back-ground">
+      <body className="back-ground">
         <header>
           <nav className="links">
             <div className="leftbox">
@@ -51,16 +57,22 @@ function App() {
           <div class="wrapper">
             <div>
               <div className="left-side-border"></div>
-              <div className="left-side"> NO2 </div>
-              <div className="left-side"> NO2 </div>
-              <div className="left-side"> NO2 </div>
+              <div className="left-side"> Weather </div>
+              <div className="left-side"> Blog </div>
+              <div className="left-side"> Contacts </div>
+              <div>
+                <div className="leftside-bottom">
+                  Subscribe
+                  <div className="small-left">@NYTimes</div>
+                </div>
+              </div>
               <div className="no-border-right"></div>
             </div>
 
             <div>
               <div className="self-Title">
                 Self
-                <div className="bottom-self-border-right"></div>{" "}
+                <div className="bottom-self-border-right"></div>
                 <li className="pinnedone"> Pinned Issue </li>
               </div>
               <h1 className="pinned"> </h1>
@@ -81,7 +93,6 @@ function App() {
 
                     <Slide right>
                       <div className="card-header">
-                        {" "}
                         Sharing The Widespread Acclaim About Motivation{" "}
                       </div>
                     </Slide>
@@ -133,6 +144,69 @@ function App() {
             <div className="right-box">
               <div className="inner-box">
                 "Neque porro quisquam est qui dolorem ipsum quia dolor " #3 "
+              </div>
+
+              <div className="border-right-article"> <div className=" feature"> Feature Article    </div>  </div>
+              <div className="Scroll" style={mysecoundComponent}>
+                <ul className="article">
+                  <div className="title">
+                  
+                    <div className="date">  </div>
+                  
+
+                    <div style={{}}>
+                      <Slide right>
+                       
+                      </Slide>
+
+                      <Slide right>
+                        <div className="card-header">
+                          Sharing The Widespread Acclaim About Motivation{" "}
+                        </div>
+                      </Slide>
+
+                      <Slide right>
+                        <div className="card-author"> </div>By Richard Carnation
+                      </Slide>
+
+                      <Slide right>
+                        Blonde received widespread acclaim, with critics
+                        praising Ocean's introspective lyrics and the album's
+                        unconventional
+                      </Slide>
+
+                      <Slide right>
+                        <Button size="small">Stay Safe.....</Button>
+                      </Slide>
+                    </div>
+
+                    <div className="secound-Title"> </div>
+
+                    <div className="borderTitle"> </div>
+
+                    <div style={{}}>
+                      <Slide right>
+                       
+                      </Slide>
+
+                      <div className="card-header">
+                          Sharing The Widespread Acclaim About Motivation{" "}
+                        </div>
+
+                      <Slide right>By Richard Carnation</Slide>
+
+                      <Slide right>
+                        Blonde received widespread acclaim, with critics
+                        praising Ocean's introspective lyrics and the album's
+                        unconventional
+                      </Slide>
+
+                      <Slide right>
+                        <Button size="small">Stay Safe.....</Button>
+                      </Slide>
+                    </div>
+                  </div>
+                </ul>
               </div>
             </div>
 
