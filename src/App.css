@@ -130,7 +130,6 @@ table {
 * {
   box-sizing: border-box;
   max-width: 100%;
-
 }
 
 ::-webkit-scrollbar {
@@ -157,10 +156,9 @@ table {
   }
 }
 
-.back-ground{
+.back-ground {
   background-color: rgb(238, 228, 228);
 }
-
 
 .App-header {
   min-height: 20vh;
@@ -237,9 +235,6 @@ table {
   box-sizing: border-box;
   max-width: 100%;
   /* border:1px solid grey; */
-
-
-
 }
 
 /*general styles*/
@@ -253,9 +248,6 @@ body {
   color: #180202;
   background-color: #fbfffb;
   /*font-family: 'Source Sans Pro', sans-serif; */
-
-
-
 }
 
 .rightbox {
@@ -278,22 +270,19 @@ body {
   height: 200px;
 }
 
-.feature{
+.feature {
   display: flex;
   justify-content: start;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   font-size: 40px;
 }
 
-.border-right-article{
-
+.border-right-article {
   border-bottom: 1px solid black;
   margin-top: 77px;
   margin-left: 20px;
   width: 450px;
-
 }
-
 
 /*
 .seperator {
@@ -351,7 +340,7 @@ body {
   margin-left: 30px;
 }
 
-.article-Title{
+.article-Title {
   font-size: 60px;
   font-weight: 100;
   margin-left: 30px;
@@ -363,8 +352,6 @@ body {
   border-bottom: 1px solid black;
   width: 569px;
 }
-
-
 
 .title-Name {
   color: black;
@@ -407,8 +394,6 @@ img {
   margin-right: 660px;
   margin-bottom: 40px;
 }
-
-
 
 .card-header {
   margin-left: 20px;
@@ -530,10 +515,6 @@ img {
   display: flex;
 }
 
-
-
-
-
 .right-box {
   border: 1px solid rgb(39, 38, 38);
   width: 500px;
@@ -563,22 +544,19 @@ img {
 
 .left-side {
   margin-left: 20px;
-font-size: x-large;
-font-weight: 150px;
+  font-size: x-large;
+  font-weight: 150px;
   padding: 20px;
 }
 
-.leftside-bottom{
-
+.leftside-bottom {
   margin-left: 5px;
-margin-top: 270px ;
+  margin-top: 270px;
   padding: 5px;
-
 }
 
-.small-left{
+.small-left {
   font-size: x-large;
-
 }
 
 .no {
@@ -588,7 +566,6 @@ margin-top: 270px ;
 }
 
 .pinnedone {
- 
   font-size: 25px;
   font-weight: 100;
 
@@ -596,15 +573,28 @@ margin-top: 270px ;
 }
 
 .date {
-
-  margin-left:400px;
+  margin-left: 400px;
   font-size: 25px;
   font-weight: 100;
-
 
   width: 270px;
 }
 
+@media (max-width: 1700px) {
+  .right-box {
+  }
+}
+
+@media (max-width: 1600px) {
+  .right-box {
+  }
+}
+
+@media (max-width: 1500px) {
+  .right-box {
+    width: 300px;
+  }
+}
 
 @media (max-width: 800px) {
   .title-Name {
@@ -651,7 +641,7 @@ margin-top: 270px ;
 
   .secound-Title {
     font-size: 50px;
-    margin-bottom: 350px;
+   
     font-weight: 100;
     margin-left: 40px;
   }
@@ -690,6 +680,8 @@ margin-top: 270px ;
     margin-top: none;
     height: none;
     margin-left: none;
+
+    
   }
 
   .cards {

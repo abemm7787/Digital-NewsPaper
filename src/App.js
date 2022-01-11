@@ -5,7 +5,6 @@ import Ticker from "react-ticker";
 import axios from "axios";
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import { IconName } from "react-icons/ai";
-import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
