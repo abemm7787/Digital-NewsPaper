@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import { IconName } from "react-icons/ai";
 import Slide from "react-reveal/Slide";
 import pic from "./bitcoin.jpg";
+import home from "./houses.jpg";
+import tech from "./tech.jpg";
+
 //<img src={pic} />
 const myComponent = {
   width: "850px",
@@ -25,11 +28,11 @@ function App() {
         <header>
           <nav className="links">
             <div className="leftbox">
-              "Neque porro quisquam est qui dolorem ipsum quia dolor " 
+              "Neque porro quisquam est qui dolorem ipsum "
             </div>
             <div className="title-Name"> The New York Times </div>
             <div className="rightbox">
-              "Neque porro quisquam est qui dolorem ipsum quia dolor , .
+              "Neque porro quisquam est qui dolorem ipsum quia .
             </div>
           </nav>
           <div>
@@ -63,7 +66,7 @@ function App() {
 
             <div>
               <div className="self-Title">
-                Self
+                Real
                 <div className="bottom-self-border-right"></div>
                 <li className="pinnedone"> Pinned Issue </li>
               </div>
@@ -74,7 +77,7 @@ function App() {
             <div className="Scroll" style={myComponent}>
               <ul className="article">
                 <div className="title">
-                  <div className="secound-Title"> Esteem</div>
+                  <div className="secound-Title"> Crypto</div>
                   <div className="date"> 01/08/2022 </div>
                   <div className="borderTitle"> </div>
 
@@ -104,13 +107,39 @@ function App() {
                     </Slide>
                   </div>
 
-                  <div className="secound-Title"> Esteem</div>
+                  <div className="secound-Title"> Estate</div>
 
                   <div className="borderTitle"> </div>
 
                   <div style={{}}>
                     <Slide right>
-                      <img className="image-page" src={pic} />
+                      <img className="image-page" src={home} />
+                    </Slide>
+
+                    <Slide right>
+                      <p> Sharing The Widespread Acclaim About Motivation </p>
+                    </Slide>
+
+                    <Slide right>By Richard Carnation</Slide>
+
+                    <Slide right>
+                      Blonde received widespread acclaim, with critics praising
+                      Ocean's introspective lyrics and the album's
+                      unconventional
+                    </Slide>
+
+                    <Slide right>
+                      <button size="small">Stay Safe.....</button>
+                    </Slide>
+                  </div>
+
+                  <div className="secound-Title"> Science</div>
+
+                  <div className="borderTitle"> </div>
+
+                  <div style={{}}>
+                    <Slide right>
+                      <img className="image-page" src={tech} />
                     </Slide>
 
                     <Slide right>

@@ -387,6 +387,9 @@ img {
   width: 67rem;
 }
 
+
+
+
 .center-cards {
   justify-content: space-around;
   border: 7px solid #00000002;
@@ -608,12 +611,28 @@ display:none;
   }
 }
 
+
+@media(max-width:1080px){
+  .title-Name{
+   
+     width:1000px;
+     font-size: 60px;
+     display:flex
+    
+    }
+    
+}
+
+
 @media (max-width: 800px) {
   .title-Name {
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 40px;
+    width:none;
+   
+    justify-content: none;
   }
 
   .ticker {
@@ -624,13 +643,13 @@ display:none;
 
   .leftbox {
     border: 1px solid rgb(0, 5, 0);
-    width: 130px;
+    width: 260px;
     height: 50px;
   }
 
   .rightbox {
     border: 1px solid rgb(0, 5, 0);
-    width: 130px;
+    width: 260px;
     height: 50px;
   }
 
