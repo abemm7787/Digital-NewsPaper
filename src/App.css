@@ -581,8 +581,20 @@ img {
 }
 
 @media (max-width: 1700px) {
-  .right-box {
+ 
+  .wrapper{
+justify-content: center;
+   
   }
+
+.bottom-border-right{
+display:none;
+}
+
+  .right-box{
+    display: none;
+  }
+
 }
 
 @media (max-width: 1600px) {
@@ -688,4 +700,16 @@ img {
     width: 950;
     height: 400;
   }
+
+
+
+.self-sentence{
+  display: none;
+}
+
+
+.right-box{
+  display: none;
+}
+
 }

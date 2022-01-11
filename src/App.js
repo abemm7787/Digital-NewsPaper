@@ -25,7 +25,7 @@ function App() {
         <header>
           <nav className="links">
             <div className="leftbox">
-              "Neque porro quisquam est qui dolorem ipsum quia dolor " "
+              "Neque porro quisquam est qui dolorem ipsum quia dolor " 
             </div>
             <div className="title-Name"> The New York Times </div>
             <div className="rightbox">
@@ -138,18 +138,17 @@ function App() {
                 "Neque porro quisquam est qui dolorem ipsum quia dolor " #3 "
               </div>
 
-              <div className="border-right-article"> <div className=" feature"> Feature Article    </div>  </div>
+              <div className="border-right-article">
+                {" "}
+                <div className=" feature"> Feature Article </div>{" "}
+              </div>
               <div className="Scroll" style={mysecoundComponent}>
                 <ul className="article">
                   <div className="title">
-                  
-                    <div className="date">  </div>
-                  
+                    <div className="date"> </div>
 
                     <div style={{}}>
-                      <Slide right>
-                       
-                      </Slide>
+                      <Slide right></Slide>
 
                       <Slide right>
                         <div className="card-header">
@@ -177,13 +176,11 @@ function App() {
                     <div className="borderTitle"> </div>
 
                     <div style={{}}>
-                      <Slide right>
-                       
-                      </Slide>
+                      <Slide right></Slide>
 
                       <div className="card-header">
-                          Sharing The Widespread Acclaim About Motivation{" "}
-                        </div>
+                        Sharing The Widespread Acclaim About Motivation{" "}
+                      </div>
 
                       <Slide right>By Richard Carnation</Slide>
 
