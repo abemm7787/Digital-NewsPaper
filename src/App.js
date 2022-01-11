@@ -1,16 +1,9 @@
 import "./App.css";
 import React from "react";
-import ReactDom from "react-dom";
 import Ticker from "react-ticker";
-import axios from "axios";
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import { IconName } from "react-icons/ai";
-import CardContent from "@material-ui/core/CardContent";
-import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-
 import Slide from "react-reveal/Slide";
-
 import pic from "./bitcoin.jpg";
 //<img src={pic} />
 const myComponent = {
@@ -107,7 +100,7 @@ function App() {
                     </Slide>
 
                     <Slide right>
-                      <Button size="small">Stay Safe.....</Button>
+                      <button size="small">Stay Safe.....</button>
                     </Slide>
                   </div>
 
@@ -133,7 +126,7 @@ function App() {
                     </Slide>
 
                     <Slide right>
-                      <Button size="small">Stay Safe.....</Button>
+                      <button size="small">Stay Safe.....</button>
                     </Slide>
                   </div>
                 </div>
@@ -175,7 +168,7 @@ function App() {
                       </Slide>
 
                       <Slide right>
-                        <Button size="small">Stay Safe.....</Button>
+                        <button size="small">Stay Safe.....</button>
                       </Slide>
                     </div>
 
@@ -201,7 +194,7 @@ function App() {
                       </Slide>
 
                       <Slide right>
-                        <Button size="small">Stay Safe.....</Button>
+                        <button size="small">Stay Safe.....</button>
                       </Slide>
                     </div>
                   </div>
