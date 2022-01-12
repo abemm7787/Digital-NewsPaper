@@ -7,6 +7,7 @@ import Slide from "react-reveal/Slide";
 import pic from "./bitcoin.jpg";
 import home from "./houses.jpg";
 import tech from "./tech.jpg";
+import Marquee from "react-fast-marquee";
 
 //<img src={pic} />
 const myComponent = {
@@ -36,13 +37,12 @@ function App() {
             </div>
           </nav>
           <div>
-            <Ticker speed={10} height={55}>
-              {({}) => (
-                <>
-                  <h2 className="ticker">This is the Headline of element.</h2>
-                </>
-              )}
-            </Ticker>
+            <Marquee  scrollamount="15" className="ticker" width="100%" direction="left"   >
+        
+   <li>Now And Then You Miss It Sounds Make You Cry</li>
+   <li>Now In - MoMa Sharing Exhibition NOW</li>
+   <li>NYC Opens After Long Lockdown Check</li>
+            </Marquee>
 
             <div className="bottom-border-right"></div>
           </div>

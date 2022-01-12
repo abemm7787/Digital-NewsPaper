@@ -65,7 +65,7 @@
   width: 100%;
   height: 590px;
   margin-left: 20px;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   scroll-snap-type: y proximity;
   scrollbar-width: 10px;
@@ -543,7 +543,6 @@ img {
   .ticker {
     background-color: rgb(5, 8, 2);
 
-    font-size: 22px;
   }
 
   .leftbox {
@@ -640,5 +639,29 @@ img {
     display: none;
   }
 }
+
+
+
+.marquee{
+  font-size: 20px;
+
+
+ padding: 6px 0;
+ width: calc(100% + 44px);
+ margin-left: -20px;
+ flex-shrink: 0;
+}
+
+span:before{
+  display: inline-block;
+  content:"";
+  border-radius: 50%;
+  width: 10px;
+  height:10px;
+  position: relative;
+  vertical-align: baseline;
+}
+
+
 
 @import url("https://fonts.googleapis.com/css2?family=Bokor&display=swap");
