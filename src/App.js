@@ -30,7 +30,7 @@ function App() {
             <div className="leftbox">
               "Neque porro quisquam est qui dolorem ipsum "
             </div>
-            <div className="title-Name"> The New York Times </div>
+            <div className="title-Name"> The New Jersey Times </div>
             <div className="rightbox">
               "Neque porro quisquam est qui dolorem ipsum quia .
             </div>
@@ -74,92 +74,90 @@ function App() {
               <div className="self-sentence"> NO.O1 </div>
             </div>
 
-            <div className="Scroll" style={myComponent}>
-              <ul className="article">
-                <div className="title">
-                  <div className="secound-Title"> Crypto</div>
-                  <div className="date"> 01/08/2022 </div>
-                  <div className="borderTitle"> </div>
+            <div className="Scroll">
+              <section>
+                <div className="secound-Title"> Crypto</div>
+                <div className="date"> 01/08/2022 </div>
+                <div className="borderTitle"> </div>
 
-                  <div style={{}}>
-                    <Slide right>
-                      <img className="image-page" src={pic} />
-                    </Slide>
+                <div style={{}}>
+                  <Slide right>
+                    <img className="image-page" src={pic} />
+                  </Slide>
 
-                    <Slide right>
-                      <div className="card-header">
-                        Sharing The Widespread Acclaim About Motivation{" "}
-                      </div>
-                    </Slide>
+                  <Slide right>
+                    <div className="card-header">
+                      Sharing The Widespread Acclaim About Motivation{" "}
+                    </div>
+                  </Slide>
 
-                    <Slide right>
-                      <div className="card-author"> </div>By Richard Carnation
-                    </Slide>
+                  <Slide right>
+                    <div className="card-author"> </div>By Richard Carnation
+                  </Slide>
 
-                    <Slide right>
-                      Blonde received widespread acclaim, with critics praising
-                      Ocean's introspective lyrics and the album's
-                      unconventional
-                    </Slide>
+                  <Slide right>
+                    Blonde received widespread acclaim, with critics praising
+                    Ocean's introspective lyrics and the album's unconventional
+                  </Slide>
 
-                    <Slide right>
-                      <button size="small">Stay Safe.....</button>
-                    </Slide>
-                  </div>
-
-                  <div className="secound-Title"> Estate</div>
-
-                  <div className="borderTitle"> </div>
-
-                  <div style={{}}>
-                    <Slide right>
-                      <img className="image-page" src={home} />
-                    </Slide>
-
-                    <Slide right>
-                      <p> Sharing The Widespread Acclaim About Motivation </p>
-                    </Slide>
-
-                    <Slide right>By Richard Carnation</Slide>
-
-                    <Slide right>
-                      Blonde received widespread acclaim, with critics praising
-                      Ocean's introspective lyrics and the album's
-                      unconventional
-                    </Slide>
-
-                    <Slide right>
-                      <button size="small">Stay Safe.....</button>
-                    </Slide>
-                  </div>
-
-                  <div className="secound-Title"> Science</div>
-
-                  <div className="borderTitle"> </div>
-
-                  <div style={{}}>
-                    <Slide right>
-                      <img className="image-page" src={tech} />
-                    </Slide>
-
-                    <Slide right>
-                      <p> Sharing The Widespread Acclaim About Motivation </p>
-                    </Slide>
-
-                    <Slide right>By Richard Carnation</Slide>
-
-                    <Slide right>
-                      Blonde received widespread acclaim, with critics praising
-                      Ocean's introspective lyrics and the album's
-                      unconventional
-                    </Slide>
-
-                    <Slide right>
-                      <button size="small">Stay Safe.....</button>
-                    </Slide>
-                  </div>
+                  <Slide right>
+                    <button size="small">Stay Safe.....</button>
+                  </Slide>
                 </div>
-              </ul>
+              </section>
+              <section>
+                <div className="secound-Title"> Estate</div>
+
+                <div className="nextborderTitle"> </div>
+
+                <div style={{}}>
+                  <Slide right>
+                    <img className="image-page" src={home} />
+                  </Slide>
+
+                  <Slide right>
+                    <p> Sharing The Widespread Acclaim About Motivation </p>
+                  </Slide>
+
+                  <Slide right>By Richard Carnation</Slide>
+
+                  <Slide right>
+                    Blonde received widespread acclaim, with critics praising
+                    Ocean's introspective lyrics and the album's unconventional
+                  </Slide>
+
+                  <Slide right>
+                    <button size="small">Stay Safe.....</button>
+                  </Slide>
+                </div>
+              </section>
+
+              <section>
+                <div className="secound-Title"> Science</div>
+
+                <div className="thridborderTitle"> </div>
+
+                <div style={{}}>
+                  <Slide right>
+                    <img className="image-page" src={tech} />
+                  </Slide>
+
+                  <Slide right>
+                    <p> Sharing The Widespread Acclaim About Motivation </p>
+                  </Slide>
+
+                  <Slide right>By Richard Carnation</Slide>
+
+                  <Slide right>
+                    Blonde received widespread acclaim, with critics praising
+                    Ocean's introspective lyrics and the album's unconventional
+                  </Slide>
+
+                  <Slide right>
+                    <button size="small">Stay Safe.....</button>
+                  </Slide>
+                </div>
+              </section>
             </div>
 
             <div className="right-box">
